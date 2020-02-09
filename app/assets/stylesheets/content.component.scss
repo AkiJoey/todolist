@@ -1,0 +1,52 @@
+#content {
+	min-height: calc(100% - 10rem - 30px);
+	padding: 10px 0 20px;
+	line-height: 2;
+	.mat-card {
+		width: calc(1000px - 16px * 2);
+		margin: 20px auto;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px 6px rgba(7, 17, 27, .06);
+		animation: up 1s;
+		&:hover {
+			box-shadow: 0 4px 12px 12px rgba(7, 17, 27, .15);
+		}
+		.card-head {
+			margin: 0 10px;
+			.mat-form-field {
+				margin-right: 50px;
+			}
+			.mat-raised-button {
+				margin-top: 10px;
+				float: right;
+			}
+		}
+		.card-body {
+			margin: 20px 10px;
+			.card-item {
+				height: 40px;
+				padding-top: 5px;
+				animation: up 1.2s;
+				.mat-checkbox {
+					float: left;
+				}
+				.mat-chip-list-wrapper {
+					float: left;
+					margin-left: 5px;
+					.mat-chip {
+						min-height: 24px;
+					}
+					.mat-icon-button {
+						opacity: 0;
+						transform: translateX(100%);
+						transition: .5s;
+					}
+				}
+				&:hover .mat-icon-button {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+}

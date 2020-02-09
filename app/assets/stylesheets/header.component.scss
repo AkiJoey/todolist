@@ -1,0 +1,30 @@
+#header {
+	height: 3rem;
+	padding: .5rem 0;
+	box-shadow: 0 0 12px 0 rgba(7, 17, 27, .06);
+	animation: down 1s;
+	#nav {
+		margin: 0 auto;
+		max-width: 1000px;
+		#logo {
+			height: 2.3rem;
+			padding: .3rem .7rem .3rem 0;
+			float: left;
+		}
+		#title {
+			font-size: 20px;
+			font-weight: bold;
+			font-family: Trebuchet MS;
+			line-height: 3rem;
+			float: left;
+		}
+		#btn {
+			padding: calc((3rem - 40px) / 2) 0;
+			float: right;
+			img {
+				width: 40px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
